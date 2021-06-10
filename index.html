@@ -83,13 +83,17 @@
                   <button type="button1" class="btn py-2 font-weight-bold" style ="background-color: #41cd8c; color:white">DETAILS</button>
                   <button type="button1" class="btn py-2 font-weight-bold" style ="background-color: #41cd8c;color:white">REVIEWS</button>
                   <button class="btn py-2 font-weight-bold"style ="background-color: #41cd8c; color:white" onclick="myFunction2()">DATE</button>
-                  <p id="demo2"></p>
-                    <script>
-                      function myFunction2() {
-
-                      document.getElementById("demo2").innerHTML = "15 july,2000";
-                      }
-                    </script>
+                  <script>
+                    function myFunction2() {
+                    var x = document.getElementById('SectionDate');
+                    if (x.style.display == 'none') {
+                    x.style.display = 'block';
+                    } else {
+                    x.style.display = 'none';
+                    }
+                    }
+                  </script>   
+                  <DIV ID="SectionDate">15 july,2000</DIV>             
               </div>
               <div class=" myDIV col-lg-6 col-md-12 col-sm-12 col-12  pt-5">
                 <img  id = "image" src="bmw-s-1000-rr.jpg" class="img-fluid" style="max-height:600px;">
